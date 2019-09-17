@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Saira+Stencil+One&display=swap&effect=ice');
+.a{
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 40px;
+  letter-spacing:2px;
+  word-spacing: 0;
+  margin-left: 0;
+  margin-right: 0;
+  /* border: 2px solid red; */
+}
+.logo .t , .logo .o , .logo .n2
+{ position :relative;
+  left:-13px;
+  font-family: 'Lobster', cursive;
+  /* border: 2px solid red; */
+  margin-left: 0;
+  margin-right: 0;
+}
+.logo-class
+{
+  background-image:linear-gradient(to right, lavender , white);
+  height:100px;
+}
+h1
+{
+  margin-bottom: 0;
+}
+.tagline
+{
+  margin-top: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  color:#FFC312;
+}
+.search-container
+{
+  height:20px;
+  margin-top: 30px;
+}
+.current-col
+{
+  background-image:linear-gradient(to left, lavender, white);
+  height:100px;
+}
+.brdr
+{
+  border:2px solid red;
+}
+.table-custom
+{
+  margin:0;
+}
+.pad{
+  padding: 0;
+
+}
+.mar
+{
+  margin:0;
+
+}
