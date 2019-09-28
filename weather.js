@@ -83,10 +83,11 @@ module.exports.tempPrec = function(latitude,longitude,res,callback)
 
     }
     //console.log(chalk.red.inverse(data.tomarrow.temperature));
+
     //var data2 = JSON.parse(JSON.stringify(data));
     //console.log(chalk.cyan.inverse(data2));
     callback(undefined, JSON.stringify(data));
-    //callback(undefined,"zero signal");
+    //callback(undefined,"zero-signal");
   }
   });
 
