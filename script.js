@@ -1,6 +1,6 @@
 function searchloc()
 {
-  console.log("hello");
+  //console.log("hello");
   var loc = document.getElementById("loc").value;
 
   console.log(loc);
@@ -138,4 +138,4 @@ function change_time()
 setInterval(change_time,1000);
 };
  window.onload=time_container();
-console.log("we r here");
+//console.log("we r here");
