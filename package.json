@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "an simple 1 page weather app",
+  "main": "app.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "transform-url": "^1.1.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  },
+  "scripts": {
+    "dev": "env-cmd -f config/dev.env nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "izuna",
+  "license": "ISC"
+}
