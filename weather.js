@@ -2,7 +2,7 @@ var req = require('request');
 var chalk=require('chalk');
 module.exports.tempPrec = function(latitude,longitude,res,callback)
 {
-  var dark_sky_url= 'https://api.darksky.net/forecast/46c9559af34380beca4b2a13c40602b9/' + latitude +"," + longitude;
+  var dark_sky_url= 'https://api.darksky.net/forecast/' + process.env.DARKSKY_KEY + '/' + latitude +"," + longitude;
   // after changing units
   dark_sky_url= dark_sky_url + "?units=si";
   //console.log(dark_sky_url);
