@@ -8,8 +8,10 @@ module.exports ={
   params={
     loc:loc
   };
+
+  console.log("mapbox key",process.env.MAPBOX_KEY);
   var url = transformURL("https://api.mapbox.com/geocoding/v5/mapbox.places/:loc.json",params);
-  var mapbox_url=url + "?access_token=pk.eyJ1IjoiaXp1bmEtODk0IiwiYSI6ImNqemVnNXlmMTAyMXUzbXQ2MzQ3cWlpYXgifQ.5J-jQfhtF71FNHw4YjK-9Q";
+  var mapbox_url=url + "?access_token=" + process.env.MAPBOX_KEY;
   //console.log(mapbox_url);
   req({url:mapbox_url,json:true} , (error,res)=>{
 

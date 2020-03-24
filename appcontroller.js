@@ -1,19 +1,27 @@
 var mapbox=require('./mapbox');
+var url = require('url');
+var path = require('path');
 module.exports.appcontroller = function(app)
 {
   app.get('/',function(req,res)
   {
-    res.sendFile(path.join(__dirname + '/index.html'));
-    res.end();
+
+    console.log(path.join(__dirname,'index.html'));
+    //res.send("kal");
+    //res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname,'index.html'));
+    //res.end();
   });
-  app.get('/favicon.ico' , function(req,res)
+  
+  app.get('/lform',function(req,res)
   {
-    //console.log(req.params.loc);
-    //mapbox.giveCord(req.params.loc,res);
-    //console.log("welcome to -" + req.params.loc);
-    //res.send(2.png);
-    res.end();
-  });
+    var q=url.parse(req.url , true);
+    var qData = q.query;
+    console.log("req recieved for "  + qData.loc);
+      mapbox.giveCord(qData.loc,res);
+    //res.end();
+  })
+  
   app.get('/:loc' , function(req,res)
   {
     //console.log(req.params.loc);
